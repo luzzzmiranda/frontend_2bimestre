@@ -1,50 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tempero Veg</title>
     <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/cssheader.css">
     <link rel="stylesheet" href="css/cssmain.css">
     <link rel="stylesheet" href="css/cssfooter.css">
 </head>
+
 <body>
     <header class="header-bonito">
         <div class="div-logo-com-nome">
             <img src="img/logo.png" alt="Logo Tempero Veg">
-            <h1>Tempero Veg</h1>
+            <h1>Tempero <span>Veg</span></h1>
         </div>
         <nav>
             <ul class="ul-nav-header">
-                <li class="li-nav-header"><a href="" class="ancora-header"><button class="botao-ancora">Home</button></a></li>
-                <li class="li-nav-header"><a href="" class="ancora-header"><button class="botao-ancora">Receitas salgadas</button></a></li>
-                <li class="li-nav-header"><a href="" class="ancora-header"><button class="botao-ancora">Receitas doces</button></a></li>
-                <li class="li-nav-header"><a href="" class="ancora-header"><button class="botao-ancora">Contato</button></a></li>
+                <li class="li-nav-header"><a href="index.html" class="ancora-header"><button
+                            class="botao-ancora">Home</button></a></li>
+                <li class="li-nav-header"><a href="receitas-salgadas.html" class="ancora-header"><button
+                            class="botao-ancora">Receitas salgadas</button></a></li>
+                <li class="li-nav-header"><a href="receitas-doce.html" class="ancora-header"><button
+                            class="botao-ancora">Receitas doces</button></a></li>
+                <li class="li-nav-header"><a href="contato.html" class="ancora-header"><button
+                            class="botao-ancora">Contato</button></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="conteudo">
+        <section class="conteudo" id="home">
             <h2>Explore coisas novas e experimente a culinária vegana!</h2>
-            <p>Aqui você irá encontrar receitas deliciosas, mostrando a variedade de alimentos de origem vegetal e modos de prepara-los em nossas refeições, tambem desfazendo o pensamento de que é caro e difícil aderir esse tipo de alimentação.</p>
+            <p>Aqui você irá encontrar receitas deliciosas, mostrando a variedade de alimentos de origem vegetal e modos
+                de prepara-los em nossas refeições, tambem desfazendo o pensamento de que é caro e difícil aderir esse
+                tipo de alimentação.</p>
             <p>
-                Aprenda a preparar pratos leves, saladas, sopas, massas, cereais, assados, dicas de misturas e substituições que podem ajudar na variação do cardápio, como sobremesas, cookies, sanduíches, entradas, aperitivos com legumes, vegetais e oleagenosas.
+                Aprenda a preparar pratos leves, saladas, sopas, massas, cereais, assados, dicas de misturas e
+                substituições que podem ajudar na variação do cardápio, como sobremesas, cookies, sanduíches, entradas,
+                aperitivos com legumes, vegetais e oleagenosas.
             </p>
             <h3>Invista em uma dieta mais saudável, balanceada e deliciosa!</h3>
+
+            <h2>Diferença entre vegano e os tipos de vegetariano</h2>
+            <p>Muitas pessoas confundem bastante o vegano com vegetariano, então aqui está de maneira simplificada a diferença entre eles.</p>
+            <p>Existem diferentes tipos de dietas vegetarianas, cada uma com níveis variados de restrições. Os ovolactovegetarianos excluem carne, mas incluem ovos e laticínios em sua alimentação. Os lactovegetarianos, por sua vez, consomem laticínios, mas evitam tanto carne quanto ovos. Já os vegetarianos estritos eliminam completamente carne, ovos e laticínios. Os veganos seguem a dieta mais restritiva, não consumindo nenhum produto de origem animal, como ovos, laticínios, mel, ou produtos testados em animais, ampliando essa filosofia para além da alimentação.</p><br>
         </section>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Ovolactovegetarianos</th>
+                    <th>Lactovegetarianos</th>
+                    <th>Vegetarianos Estritos</th>
+                    <th>Veganos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Não consomem carne<br>(Nem peixe, frango e frutos do mar)</td>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>●</td>
+                </tr>
+                <tr>
+                    <td>Não consomem ovos<br>(Nem produtos com ovos e derivados)</td>
+                    <td></td>
+                    <td>●</td>
+                    <td>●</td>
+                    <td>●</td>
+                </tr>
+                <tr>
+                    <td>Não consomem leite<br>(Nem derivados como queijo, iogurte e outros laticínios)</td>
+                    <td></td>
+                    <td></td>
+                    <td>●</td>
+                    <td>●</td>
+                </tr>
+                <tr>
+                    <td>Não consomem nada de origem animal na alimentação<br>(Nem laticínios e ovos)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>●</td>
+                </tr>
+                <tr>
+                    <td>Não consomem nada de origem animal<br>(Nem laticínios, ovos, mel, lã, couro e também produtos
+                        testados em animais)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>●</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
-    <footer>
+    <footer class="footer-bonito">
         <ul class="ul-footer">
             <li class="li-footer">
-                <a href="https://github.com/luzzzmiranda">GitHub</a>
+                <a class="ancora-footer" href="https://github.com/luzzzmiranda">GitHub</a>
             </li>
             <li class="li-footer">
-                <a href="https://luzzzmiranda.github.io/frontend_2bimestre/portfolio">Sobre a desenvolvedora</a>
+                <a class="ancora-footer" href="https://luzzzmiranda.github.io/frontend_2bimestre/portfolio">Sobre a
+                    desenvolvedora</a>
             </li>
         </ul>
         <h3>&copy;Todos direitos os reservado 2024</h3>
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,33 @@
+:root{
+    --cor-principal: #ADBD8A;
+    --cor-detalhe: #479650;
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+.footer-bonito{
+    background-color: var(--cor-detalhe);
+    padding: 15px;
+    height: 50px;
+    text-align: center;
+}
+
+.ul-footer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.ancora-footer{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 13pt;
+}
+
+.ancora-footer:hover{
+    color: white;
+}
+
+h3{
+    margin: 25px 0;
+}
