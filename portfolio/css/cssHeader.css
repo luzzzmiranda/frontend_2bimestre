@@ -1,6 +1,7 @@
 :root{
     --cor-secundaria: #23CFFF;
     --cor-principal: black;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -9,18 +10,95 @@ body{
 
 #img-header{
     max-width: 70px;
-    min-width: 90px;
+    min-width: 70px;
 }
 
 header{
+    position: fixed;
+    background-color: black;
+    height: 13vh;
+}
+
+.header-desktop{
     display: flex;
     box-shadow: inset 0px -4px 0px 0px var(--cor-secundaria);
-    padding: 2%;
     align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+}
+
+nav{
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .ul-header{
     display: flex;
+    justify-content: space-around;
+}
+
+.button-header{
+    background: transparent;
+    color: rgba(255, 255, 255, 0.363);
+    border: none;
+    font-size: 18px;
+}
+
+.button-header:hover{
+    color: white;
+}
+
+.menu-mobile-icon{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.menu-mobile-icon>button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 4rem;
+    font-weight: 15pt;
+}
+
+.logo-menu-header{
     flex-grow: 1;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px){
+    .header-desktop{
+        flex-direction: column;
+    }
+
+    #menu-no-mobile{
+        display: none;
+    }
+
+    .menu-mobile-icon{
+        display: inline;
+    }
+
+    .open{
+        display: inline;
+    }
+
+    .ul-header{
+        flex-direction: column;
+        box-shadow: inset 0px 4px 0px 0px var(--cor-secundaria);
+        height: 20vh;
+        width: 100vw;
+        margin-top: 1%;
+    }
+
+    .logo-menu-header{
+        width: 100vw;
+    }
+
 }

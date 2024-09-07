@@ -1,0 +1,258 @@
+:root {
+    --cor-secundaria: #23CFFF;
+    --cor-principal: black;
+    scroll-behavior: smooth;
+    --gradiente: linear-gradient(to left, var(var(--cor-secundaria)))
+}
+
+main {
+    padding: 4%;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+}
+
+#home{
+    margin-top: 15vh;
+    justify-content: space-between;
+}
+
+#home>div {
+    display: flex;
+    width: 96%;
+}
+
+#home>div>img {
+    max-width: 300px;
+    border-radius: 41px;
+}
+
+#home>div>div {
+    min-width: 320px;
+    margin-top: 10px;
+}
+
+#home>div>div>h2 {
+    margin: 0px 0px 40px 0px;
+    font-size: 14pt;
+}
+
+#home>div>div>p {
+    margin-top: 20px;
+}
+
+#home>a>button {
+    text-decoration: none;
+    margin-top: 20px;
+    background-color: var(--cor-secundaria);
+    border-radius: 19px;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+.conteudo {
+    scroll-margin-top: 20vh;
+    padding-top: 40px;
+}
+
+#sobre {
+    margin-top: 15vh;
+    display: flex;
+}
+
+#sobre>img {
+    width: 300px;
+    border-radius: 41px;
+}
+
+#sobre>div {
+    min-width: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#sobre>div>h2 {
+    margin: 0px 0px 40px 0px;
+    font-size: 14pt;
+}
+
+#sobre>div>h2>span {
+    color: var(--cor-secundaria);
+}
+
+#sobre>div>p {
+    margin-top: 20px;
+}
+
+
+#sobre>div>a>button {
+    color: white;
+    margin-top: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+#projetos>h2 {
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.conteudo-card {
+    display: flex;
+}
+
+.card {
+    margin-top: 30px;
+    min-width: 280px;
+    max-width: 650px;
+    border-radius: 20px;
+    padding: 2%;
+    transition: all 0.2s;
+}
+
+.card>h3 {
+    margin: 0 0 40px 0;
+}
+
+.conteudo-card>img {
+    width: 250px;
+}
+
+.conteudo-card>div {
+    margin-left: 20px;
+}
+
+
+.conteudo-card>div>div>p {
+    margin-top: 25px;
+}
+
+.conteudo-card>div>a>button {
+    color: white;
+    cursor: pointer;
+    margin-top: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 4px var(--cor-secundaria);
+}
+
+/* Estilo geral para o formulário */
+#contato {
+
+    max-width: 400px;
+    min-width: 200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:0px 0px 10px var(--cor-secundaria);
+}
+
+/* Estilo para os títulos */
+#contato h2 {
+    text-align: center;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+
+
+/* Estilo para os rótulos (labels) */
+#contato form label {
+    display: block;
+    font-size: 1em;
+    color: black;
+    margin-bottom: 8px;
+}
+
+/* Estilo para os campos de entrada (input e textarea) */
+#contato form input,
+#contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #23CFFF;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#contato form textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    line-height: 1.5em;
+}
+
+/* Estilo do botão de envio */
+#contato form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #23CFFF;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato form button:hover {
+    background-color: #1BA3DB;
+}
+
+@media screen and (max-width: 670px) {
+    main{
+        padding: 0px;
+    }
+    .card {
+        text-align: center;
+    }
+
+    .card>div>div {
+        display: inline;
+    }
+
+    #home>div {
+        flex-direction: column;
+    }
+
+    #home>div>img {
+        margin: 20px auto;
+    }
+
+    #sobre>img {
+        display: none;
+    }
+
+    .conteudo-card {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .conteudo-card>img {
+        margin: auto;
+    }
+
+    .conteudo-card>div {
+        margin: auto;
+    }
+
+    .card{
+        margin: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    #sobre>div {
+        margin: 0;
+    }
+}

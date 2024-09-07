@@ -121,6 +121,71 @@ tbody td:empty {
     color: #000;
 }
 
+/* Estilo geral para o formulário */
+#contato {
+
+    max-width: 400px;
+    min-width: 200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:0px 0px 10px var(--cor-secundaria);
+}
+
+/* Estilo para os títulos */
+#contato h2 {
+    text-align: center;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+
+
+/* Estilo para os rótulos (labels) */
+#contato form label {
+    display: block;
+    font-size: 1em;
+    color: black;
+    margin-bottom: 8px;
+}
+
+/* Estilo para os campos de entrada (input e textarea) */
+#contato form input,
+#contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-detalhe);
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#contato form textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    line-height: 1.5em;
+}
+
+/* Estilo do botão de envio */
+#contato form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor-detalhe);
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato form button:hover {
+    background-color: var(--cor-principal);
+}
+
 @media screen and (max-width:710px){
     table{
         display: none;

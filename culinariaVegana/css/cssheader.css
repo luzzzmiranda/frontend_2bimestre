@@ -56,6 +56,10 @@ nav{
     color: var(--cor-detalhe);
 }
 
+#aberto{
+    color: var(--cor-detalhe);
+}
+
 @media screen and (max-width: 880px){
     .div-logo-com-nome{
         width: 98%;

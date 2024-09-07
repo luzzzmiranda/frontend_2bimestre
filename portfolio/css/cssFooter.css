@@ -3,6 +3,27 @@
     --cor-principal: black;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
+footer{
+    display: flex;
+    box-shadow: inset 0px 4px 0px 0px var(--cor-secundaria);
+    padding: 1%;
+}
 
+footer>img{
+    width: 90px;
+}
+
+footer>ul{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-around;
+}
+
+footer>ul>li>a{
+    color: white;
+    font-size: 20px;
+}

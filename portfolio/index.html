@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img/assinatura.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/cssFooter.css">
     <link rel="stylesheet" href="css/cssHeader.css">
@@ -14,62 +15,91 @@
 
 <body>
     <header>
-        <img id="img-header" src="img/assinatura.png" alt="Minha assinatura">
-        <nav>
-            <ul class="ul-header">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="header-desktop">
+            <div class="logo-menu-header">
+                <img id="img-header" src="img/assinatura.png" alt="Minha assinatura">
+                <div class="menu-mobile-icon">
+                    <button onclick="showMenu()"><i class="bi bi-list"></i></button>
+                </div>
+            </div>
+            <nav id="menu-no-mobile">
+                <ul class="ul-header">
+                    <li class="li-header"><a href="#home" class="ancora-header"><button
+                                class="button-header">Home</button></a></li>
+                    <li class="li-header"><a href="#sobre" class="ancora-header"><button
+                                class="button-header">Sobre</button></a></li>
+                    <li class="li-header"><a href="#projetos" class="ancora-header"><button
+                                class="button-header">Projetos</button></a></li>
+                    <li class="li-header"><a href="#contato" class="ancora-header"><button
+                                class="button-header">Contato</button></a></li>
+                </ul>
+            </nav>
 
+            <nav class="menu-mobile">
+                <ul class="ul-header">
+                    <li class="li-header"><a href="#home" class="ancora-header"><button
+                                class="button-header">Home</button></a></li>
+                    <li class="li-header"><a href="#sobre" class="ancora-header"><button
+                                class="button-header">Sobre</button></a></li>
+                    <li class="li-header"><a href="#projetos" class="ancora-header"><button
+                                class="button-header">Projetos</button></a></li>
+                    <li class="li-header"><a href="#contato" class="ancora-header"><button
+                                class="button-header">Contato</button></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="home">
+        <section id="home" class="conteudo">
             <div>
-                <h2>BEM-VINDO(A) AO MEU PORTIFÓLIO!</h2>
-                <p>Meu nome é Luz Miranda, estudante do Curso Técnico em Informática integrado ao ensino médio, ofertado
-                    pelo IFRO - CAMPUS VILHENA.
-                    <br>
-                    Aqui você encontra meus projetos mais recentes. Explore e entre em contato para saber mais.
-                </p>
-                <a href="#contato">Entre em contato</a>
+                <div>
+                    <h2>BEM-VINDO(A) AO MEU PORTIFÓLIO!</h2>
+                    <p>Meu nome é Luz Miranda, estudante do Curso Técnico em Informática integrado ao ensino médio,
+                        ofertado
+                        pelo IFRO - CAMPUS VILHENA.</p>
+                    <p>
+                        Aqui você encontra meus projetos mais recentes. Explore e entre em contato para saber mais.
+                    </p>
+                </div>
+                <img src="img/foto-home.png" alt="Foto da desenvolvedora home">
             </div>
-            <img src="img/foto-home.png" alt="Foto da desenvolvedora home">
+            <a href="#contato"><button>Entre em contato</button></a>
 
         </section>
-        <section id="sobre">
+        <section id="sobre" class="conteudo">
+            <img src="img/foto-sobre.png" alt="Foto da section sobre ">
             <div>
-                <img src="img/foto-sobre.png" alt="Foto da section sobre ">
                 <h2>MUITO PRAZER, <br>SOU <span>LUZ MIRANDA</span>.</h2>
                 <p>Tenho 16 anos, sou estudante do IFRO - CAMPUS VILHENA e estou no 2º ano do Curso Técnico em
                     Informática
                     integrado ao ensino médio. Ainda tem algumas outras coisas sobre mim, mas estou com preguiça de
                     escrever
                     aqui, então se quiser me conhecer fale comigo pessoalmente ou no Instagram.</p>
-                <a href="https://www.instagram.com/_luzzzmiranda?igsh=Zmt0bHRxNnFhOGMy"><i
-                        class="bi bi-instagram"></i></a>
-            </div>  
+                <a href="https://www.instagram.com/_luzzzmiranda?igsh=Zmt0bHRxNnFhOGMy" target="_blank"><button><i
+                            class="bi bi-instagram"></i></button></a>
+            </div>
         </section>
-        <section id="proejtos">
+        <section id="projetos" class="conteudo">
             <h2>Projetos</h2>
             <div class="card">
                 <h3>Sons e Cenas</h3>
-                <div>
+                <div class="conteudo-card">
                     <img src="img/imagem-sons-cenas.png" alt="Logo do projeto sons e cenas">
                     <div>
-                        <p>📅 Todas as quintas-feiras <br>
-                            🕐 13h15min às 14h45min <br>
-                            🕐 14h45min às 16h15min ( 7 à 12 anos)<br>
-                            📍 Auditório - IFRO Campus Vilhena</p>
+                        <div>
+                            <p>📅 Todas as quintas-feiras</p>
+                            <p>🕐 13h15min às 14h45min</p>
+                            <p>🕐 14h45min às 16h15min ( 7 à 12 anos)</p>
+                            <p>📍 Auditório - IFRO Campus Vilhena</p>
+                        </div>
+                        <a href="https://www.instagram.com/ifrosonsecenas__?igsh=YXgwb2IzN21lc2ph"
+                            target="_blank"><button><i class="bi bi-instagram"></i></button></a>
                     </div>
                 </div>
-                <a href="https://www.instagram.com/ifrosonsecenas__?igsh=YXgwb2IzN21lc2ph"><i
-                        class="bi bi-instagram"></i></a>
+
             </div>
         </section>
-        <section id="contato">
+        <section id="contato" class="conteudo">
             <h2>Entre em contato</h2>
             <form action="#">
                 <label for="nome">Nome:</label>
@@ -78,7 +108,7 @@
                 <input type="email" name="email" id="email" required placeholder="Ex: LuzMiranda@gmail.com">
                 <label for="menssagem">Menssagem:</label>
                 <textarea name="menssagem" id="menssagem" required
-                    placeholder="Ex: Achei sdeu Portfólio íncrivel"></textarea>
+                    placeholder="Ex: Achei sdeu Portfólio íncrivel!!"></textarea>
                 <button type="submit" data-button>Enviar</button>
             </form>
         </section>
@@ -86,12 +116,13 @@
     <footer>
         <img src="img/assinatura.png" alt="Logo pessoal">
         <ul>
-            <li><a href="https://www.instagram.com/_luzzzmiranda?igsh=Zmt0bHRxNnFhOGMy"><i
+            <li><a href="https://www.instagram.com/_luzzzmiranda?igsh=Zmt0bHRxNnFhOGMy" target="_blank"><i
                         class="bi bi-instagram"></i></a></li>
 
-            <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

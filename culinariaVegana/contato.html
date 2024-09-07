@@ -22,13 +22,23 @@
                 <li class="li-nav-header"><a href="index.html" class="ancora-header"><button class="botao-ancora">Home</button></a></li>
                 <li class="li-nav-header"><a href="receitas-salgadas.html" class="ancora-header"><button class="botao-ancora">Receitas salgadas</button></a></li>
                 <li class="li-nav-header"><a href="receitas-doce.html" class="ancora-header"><button class="botao-ancora">Receitas doces</button></a></li>
-                <li class="li-nav-header"><a href="contato.html" class="ancora-header"><button class="botao-ancora">Contato</button></a></li>
+                <li class="li-nav-header"><a href="contato.html" class="ancora-header"><button class="botao-ancora" id="aberto">Contato</button></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="conteudo" id="receitas-doce">
-            <h3>Contato</h3>
+        <section id="contato" class="conteudo">
+            <h2>Entre em contato</h2>
+            <form action="#">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required placeholder="Ex: Luz Miranda">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required placeholder="Ex: LuzMiranda@gmail.com">
+                <label for="menssagem">Menssagem:</label>
+                <textarea name="menssagem" id="menssagem" required
+                    placeholder="Ex: Achei sdeu Portfólio íncrivel!!"></textarea>
+                <button type="submit" data-button>Enviar</button>
+            </form>
         </section>
     </main>
     <footer class="footer-bonito">
