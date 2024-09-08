@@ -118,6 +118,11 @@ main {
     margin: 0 0 40px 0;
 }
 
+.card>p{
+    text-align: justify;
+    margin: 5px;
+}
+
 .conteudo-card>img {
     width: 250px;
 }
